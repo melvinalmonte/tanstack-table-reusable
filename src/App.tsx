@@ -12,6 +12,7 @@ type Item = {
 };
 
 function App() {
+  // Defining table columns
   const cols = useMemo<ColumnDef<Item>[]>(
     () => [
       {
@@ -44,7 +45,6 @@ function App() {
         <h1 className="normal-case text-xl">Reusable Tanstack Table example</h1>
       </div>
       <h2 className="text-2xl p-2">Rendering {data.length} items</h2>
-
       <Table data={data} columns={cols} />
     </div>
   );
